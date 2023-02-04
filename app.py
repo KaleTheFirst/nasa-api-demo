@@ -7,7 +7,7 @@ api_key = 'v5c19WhzIBKZKwuTc0LHo7fX8TSl81hddkCGyXNz'
 
 @app.route('/')
 def index():
-    today = str(date.today())
+    today = "2006-05-16"
     response = requests.get(f'https://api.nasa.gov/planetary/apod?api_key={api_key}&date={today}')
     data = response.json()
     return render_template('index.html' , data = data, date = today)
