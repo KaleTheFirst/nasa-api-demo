@@ -1,0 +1,22 @@
+
+
+body {
+    background-color: #caebf2;
+    font-family: 'Mynerve', cursive;
+    font-size: 20px;
+    margin: 20px 30px 70px 80px;
+}
+
+
+
+
+img {
+    height: 80px;
+    width: 70%;
+    float: center;
+    border: 5px solid #555;
+      
+  }
+.row{
+    display: flex;
+}

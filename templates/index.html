@@ -2,13 +2,42 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NASA Picture of The Day</title>
+    <title>FruitHub</title>
     <style type="text/css">.body { width: auto; }</style>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
   </head>
   <body>
-    <label for="fname">Food Origin:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-  </form>
+    <h1> Welcome to the Fruit Hub</h1>
+    <p>Type in the name of your favorite fruit, and we might just tell you something about it!</p>
+    <form action="/search" method=POST>
+      <label for="fname">Fruit:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>Or try these examples here...</p>
+    <!-- <div>
+      <a href="/search?fname=Orange"><img src="https://www.tastingtable.com/img/gallery/the-science-behind-seedless-oranges/l-intro-1655473463.jpg"></a></div>
+    </div>
+    <div>
+      <a href="/search?fname=Apple"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1244&h=622&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2020%2F08%2F26%2Ffresh-apples-1.jpg"></a>
+    </div>
+    <div>
+      <a href="/search?fname=Grape"><img src="https://yaraurl.net/lvic"></a>
+    </div> -->
+    <div class="row">
+      <div class="column">
+        <a href="/search?fname=Orange"><img src="https://www.tastingtable.com/img/gallery/the-science-behind-seedless-oranges/l-intro-1655473463.jpg"></a>
+      </div>
+      <div class="column">
+        <a href="/search?fname=Apple"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1244&h=622&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2020%2F08%2F26%2Ffresh-apples-1.jpg"></a>
+      </div>
+      <div class="column">
+        <a href="/search?fname=Grape"><img src="https://yaraurl.net/lvic"></a>
+      </div>
+    </div>
 
     
   </body>

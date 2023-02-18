@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Info😋 </title>
+    <link rel="stylesheet" href="/static/result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>{{data['name']}}</h1> 
+    <p>The {{data['name']}} is a delicacy...</p>
+    <p>It comes from the {{data['family']}} family</p>
+    <p>For those die-hard nutrition heads; a {{data['name']}} contains {{data['nutritions']['carbohydrates']}} carbohydrates, 
+        {{data['nutritions']['protein']}} gram(s) of protein, {{data['nutritions']['fat']}} of fats,
+        {{data['nutritions']['sugar']}} of sugar, and {{data['nutritions']['calories']}} calories
+    </p>
+</body>
+</html>
